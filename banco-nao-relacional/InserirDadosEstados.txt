@@ -1,0 +1,11 @@
+COMANDOS DE INSERÇÃO MONGO DB
+
+
+db.estados.insert({nome:"Acre", sigla:"AC", regiao:"Norte"})  -> Forma de inserir comando no mongo db
+                                                              -> é possivel inserir em collections que não tenha sido criada anteriormente 
+                                                              -> Pode ser inserido novos documentos em uma mesma collections com quantidade de parametros diferentes.
+
+db.estados.insertOne({nome:"Acre", sigla:"AC", regiao:"Norte"}) -> Outra forma de insert, pois de acordo com MongoDb o cmd insert está depreciado.       
+
+db.estados.Find() -> Consultar os documentos da collections
+db.estados.find().Pretty() -> Consultar os documentos das collections formatado em objetos.
