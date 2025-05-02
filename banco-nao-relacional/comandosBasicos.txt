@@ -1,0 +1,6 @@
+visualizar os bancos de dados
+
+shows dbs -> visualizar os bancos disponiveis
+shows collections -> visualizar coleções
+db.NOME_COLLECTIONS.Find() -> Visualizar documento da collections
+
