@@ -1,0 +1,14 @@
+ db.estados.insert({ nome: "São Paulo" ,sigla:"SP",
+regiao: "Sudeste",
+cidades:[{
+_id: ObjectId(),
+nome: "Campinas",
+area:795.4,
+prefeito: "Jonas",
+populacao:31231
+}, {
+_id: ObjectId(),
+nome:"Sorocaba",
+distancia: 87,
+populacao:644919
+}]})

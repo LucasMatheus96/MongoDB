@@ -9,3 +9,4 @@ db.estados.insertOne({nome:"Acre", sigla:"AC", regiao:"Norte"}) -> Outra forma d
 
 db.estados.Find() -> Consultar os documentos da collections
 db.estados.find().Pretty() -> Consultar os documentos das collections formatado em objetos.
+

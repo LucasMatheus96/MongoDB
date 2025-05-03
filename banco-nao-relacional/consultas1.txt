@@ -1,0 +1,18 @@
+db.estados.find({sigla:"SP"}, {nome:1,sigla:1}) -> Consulta passando um filtro sigla e retornando apenas duas colunas do documento nome e sigla
+
+db.estados.countdocuments() -> consulta que retorna a quantidade de documentos dentro da collections
+
+db.estados.find().skip(1).limit(2) -> consulta no qual você pula o primeiro item e limita o resultado a dois itens. Nesse caso trás o 2 e 3.
+
+db.estados.find().skip(1) -> Consulta no qual salta o primeiro item da collections
+
+db.estados.find({populacao:{$exists:false}}) -> consulta com filtro onde verifica se existe o parametro populacao
+
+db.estados.find({$or:[{sigla:"RJ"},{sigla:"AC"}]}).pretty() -> consulta com operador OU nesse caso usando os campos sigla ou Rj ou Ac e trazendos os registros
+
+
+
+
+
+
+
