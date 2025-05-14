@@ -1,0 +1,3 @@
+ db.estados.update({sigla:"SP"},{$set:{populacao:4500000}}) - comando de update
+ db.estados.update({sigla:"AC"}, {$set: {cidades:[{nome:"Sergipe"}]}}) - atualizando o array cidades
+ 

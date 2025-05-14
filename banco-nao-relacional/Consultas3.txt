@@ -1,0 +1,21 @@
+db.estados.aggregate([
+
+])
+
+
+db.estados.aggregate([ { $match: { "cidades.nome": "Sorocaba" }},
+... {$unwind:"$cidades"},]) -- Unwid transforma a consulta eu um objeto para cada cidade ao invés de uma array
+
+
+db.estados.aggregate([ 
+    { $match: { "cidades.nome": "Sorocaba" } },
+    { $unwind: "$cidades" }, 
+    { $match: { "cidades.nome": "Sorocaba" } }] ) -- Consulta tras filtrado apenas as cidades de Sorocaba.
+
+
+db.estados.aggregate([ 
+    { $match: { "cidades.nome": "Sorocaba" } },
+    { $unwind: "$cidades" }, 
+    { $match: { "cidades.nome": "Sorocaba" } },
+    { $project : {_id:"$cidade._id"}}] ) 
+    
