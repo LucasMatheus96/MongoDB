@@ -5,5 +5,5 @@ db.estados.aggregate([
 ])
 
 db.estados.aggregate([
-    {$project:{populacao: {$sum:"$cidades.populacao"}}}
+    {$project:{populacao: {$sum:"$cidades.populacao", sigla:1. _id:0}}}
 ])
