@@ -1,0 +1,3 @@
+db.empresas.aggregate([
+    {$match:{nome:"Bradesco"}}
+])

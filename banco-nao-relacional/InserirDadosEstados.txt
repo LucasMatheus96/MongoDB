@@ -10,3 +10,12 @@ db.estados.insertOne({nome:"Acre", sigla:"AC", regiao:"Norte"}) -> Outra forma d
 db.estados.Find() -> Consultar os documentos da collections
 db.estados.find().Pretty() -> Consultar os documentos das collections formatado em objetos.
 
+ db.estados.insert({ nome: "Rio de Janeiro" ,sigla:"RJ",
+regiao: "Sudeste",
+cidades:[{
+            _id: ObjectId(),
+            nome: "Niteroi",
+            area:795.4,
+            populacao:31231
+}
+]})
